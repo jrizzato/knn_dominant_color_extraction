@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ColorExtractor | Home
+{% endblock %}
+
+{% block content %}
+
+<!-- https://getbootstrap.com/docs/5.3/components/card/ -->
+<div class="card bg-dark text-white">
+  <img src="./static/home_pink.png" class="card-img">
+  <div class="card-img-overlay" style="max-width: 700px; padding-top: 130px; padding-left: 70px">
+    <h1 class="fw-bold display-5 mb-3">Dominant Color Extractor</h1>
+    <p class="card-text fs-4">Automatically identify the main colors from any image using K-Means clustering.</p>
+    <p class="card-text fs-5">Get color palettes in seconds for your design and development projects.</p>
+    <a href="{{ url_for('extract') }}" class="btn btn-outline-light btn-lg px-4 rounded-pill text-uppercase fw-semibold" style="letter-spacing: 0.05em;">
+        Try It Now
+      </a>
+  </div>
+</div>
+
+{% endblock %}
